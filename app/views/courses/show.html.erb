@@ -1,0 +1,12 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--3-col">
+    <%= render partial: 'lessons/list', locals: { course: @course } %>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col">
+    <h3><%= @course.title %></h3>
+    <div>
+      <%= raw @course.description %>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--3-col">Right</div>
+</div>

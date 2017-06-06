@@ -4,10 +4,14 @@ class CoursesController < ApplicationController
     @course = Course.new
   end
 
+  def show
+    @course = Course.find params[:id]
+  end
+
   def create
-    @course = Api::V1::CreateCourse.call(create_course_params)
-    if @course.success?
-      redirect_to root_path, success: 'Course created!'
+    create_course = Api::V1::CreateCourse.call(create_course_params)
+    if create_course.success?
+      redirect_to course_path(create_course.result)
     else
       render :new
     end
