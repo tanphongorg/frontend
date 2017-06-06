@@ -12,6 +12,8 @@
       <%= render 'layouts/header' %>
       <%= render 'layouts/drawer' %>
       <main class="mdl-layout__content">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <div class="page-content"><%= yield %></div>
       </main>
       <%= render 'layouts/footer' %>
