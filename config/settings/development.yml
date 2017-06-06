@@ -1,2 +1,7 @@
 host: 'localhost'
 port: '3002'
+action_mailer:
+  delivery_method: 'smtp'
+  smtp_settings:
+    address: 'localhost'
+    port: 1025

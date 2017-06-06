@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'material_design_lite-sass'
 gem 'devise'
 gem 'config'
+gem 'simple_command'
+gem 'sql_query'
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,6 +45,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'faker'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'pry-byebug'
+  gem 'simplecov', require: false
 end
 
 group :development do
